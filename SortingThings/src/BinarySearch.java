@@ -5,7 +5,7 @@ public class BinarySearch {
 		System.out.println(search(arr, 0, arr.length - 1, 23));
 
 	}
-
+	//Complexity O(log(n))
 	public static int search(int arr[], int l, int r, int x) {
 		if (r >= l) {
 			int middle = l + (r - l) / 2;
