@@ -7,7 +7,9 @@ public class SelectionSort {
 		getOut(arr);
 
 	}
-
+	/*
+	 * Complexity: O(n^2)
+	 */
 	private static void sort(int[] arr) {
 		int size = arr.length;
 		for (int i = 0; i < size - 1; i++) {
