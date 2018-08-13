@@ -9,7 +9,7 @@ public class AlwaysRemember {
 		System.out.println(binarySearch(arr, 0, arr.length - 1, 8));
 
 	}
-
+	
 	public static void heapSort(int[] arr) {
 
 		int size = arr.length;
