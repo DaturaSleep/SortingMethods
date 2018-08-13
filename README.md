@@ -8,6 +8,7 @@ Also here are a few methods for finding data as binary search and etc.
 * [Insertion Sort](https://github.com/DaturaSleep/SortingMethods/blob/master/SortingThings/src/InsertionSort.java)
 * [Selection Sort](https://github.com/DaturaSleep/SortingMethods/blob/master/SortingThings/src/SelectionSort.java)
 * [Heap Sort](https://github.com/DaturaSleep/SortingMethods/blob/master/SortingThings/src/HeapSort.java) 
+* [Quick Sort](https://github.com/DaturaSleep/SortingMethods/blob/master/SortingThings/src/QuickSort.java) 
 
 ## Links to searching algorithms:
 * [Linear Search](https://github.com/DaturaSleep/SortingMethods/blob/master/SortingThings/src/LinearSearch.java)
