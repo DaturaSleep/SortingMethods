@@ -3,10 +3,50 @@ public class AlwaysRemember {
 	public static void main(String[] args) {
 		int[] arr = { 1, 0, 4, 7, 8, 5 };
 		getOut(arr);
-		mergeSort(arr, 0, arr.length - 1);
+		// mergeSort(arr, 0, arr.length - 1);
+		heapSort(arr);
 		getOut(arr);
 		System.out.println(binarySearch(arr, 0, arr.length - 1, 8));
 
+	}
+
+	public static void heapSort(int[] arr) {
+
+		int size = arr.length;
+
+		for (int i = size / 2 - 1; i >= 0; i--) {
+			heapify(arr, size, i);
+		}
+
+		for (int i = size - 1; i >= 0; i--) {
+
+			int key = arr[0];
+			arr[0] = arr[i];
+			arr[i] = key;
+
+			heapify(arr, i, 0);
+
+		}
+	}
+
+	public static void heapify(int[] arr, int n, int i) {
+		int leader = i;
+		int left = (2 * i) + 1;
+		int right = (2 * i) + 2;
+
+		if (left < n && arr[left] > arr[leader])
+			leader = left;
+
+		if (right < n && arr[right] > arr[leader])
+			leader = right;
+
+		if (leader != i) {
+			int key = arr[i];
+			arr[i] = arr[leader];
+			arr[leader] = key;
+
+			heapify(arr, n, leader);
+		}
 	}
 
 	public static void mergeSort(int[] arr, int l, int r) {
